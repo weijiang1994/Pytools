@@ -1,0 +1,14 @@
+QCheckBox{
+	spacing: 5px;
+	font-size: 18px;
+}
+QCheckBox::indicator {
+	width: 26px;
+	height: 50px;
+}
+QCheckBox::indicator::unchecked {
+	image: url(./res/img/un_check.png);
+}
+QCheckBox::indicator::checked {
+	image: url(./res/img/checked.png);
+}
