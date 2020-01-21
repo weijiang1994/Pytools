@@ -4,7 +4,7 @@
 ### 开始
 >git clone https://github.com/weijiang1994/Pytools.git
 
-进入目录Pytools 运行run.py文件
+进入目录 `Pytools` 运行 `run.py` 文件
 
 #### 20200120更新
 1. 添加pip安装小工具;
