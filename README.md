@@ -4,5 +4,4 @@
 ### 开始
 >git clone https://github.com/weijiang1994/Pytools.git
 
-进入目录'Pytools'
-'python run.py'
+进入目录Pytools 运行run.py文件
