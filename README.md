@@ -7,5 +7,5 @@
 进入目录Pytools 运行run.py文件
 
 #### 20200120更新
-1.添加pip安装小工具;
-2.添加sqlacodegen工具;
+1. 添加pip安装小工具;
+2. 添加sqlacodegen工具;
