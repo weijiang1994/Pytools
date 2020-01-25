@@ -6,6 +6,8 @@
 
 进入目录 `Pytools` 运行 `run.py` 文件
 
+·依赖:pyqt5·
+
 #### 20200120更新
 1. 添加pip安装小工具;
 2. 添加sqlacodegen工具;
@@ -16,3 +18,4 @@
 
 #### 20200125更新
 `添加了局域网socket文件传输工具,目前只实现了TCP协议传输,后续加入UDP,以及大文件传输稳定性提升等.`
+![tcp tool] (https://github.com/weijiang1994/Pytools/blob/master/image/tcp-tool.png 'tcp tool')
