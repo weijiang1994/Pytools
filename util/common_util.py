@@ -4,8 +4,6 @@
 @Site    : 
 @File    : common_util.py
 @Software: PyCharm
-@License: (@)Copyright 2001-2019,SZ_Colibri
-@Contact:weijiang@colibri.com.cn
 """
 import traceback
 from functools import wraps
@@ -101,3 +99,12 @@ def display_cmd_info(widget, msg):
     if 'Successful' in msg:
         msg = '<span style=" color:#00ff00;">' + msg + '</span>'
     widget.append(msg)
+
+
+def open_choose_file_dialog(dialog_title: str, file_path: str, file_type_format: str) -> tuple:
+    try:
+        file_name, file_type = QFileDialog.getOpenFileName(None, dialog_title, file_path, file_type_format)
+        if file_name is not None and file_type is not None:
+            return file_name, file_type
+    except Exception as e:
+        print(e.args)

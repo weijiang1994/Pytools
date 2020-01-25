@@ -4,8 +4,6 @@
 @Site    : 
 @File    : main_window.py
 @Software: PyCharm
-@License: (@)Copyright 2001-2019,SZ_Colibri
-@Contact:weijiang@colibri.com.cn
 """
 from PyQt5.QtGui import QFont, QIcon
 
@@ -15,6 +13,7 @@ from util.style import LEFT_WIDGET_STYLE
 from controller.pip_window import PipWindow
 from util.common_util import APP_ICON
 from controller.sql_window import SQLWindow
+from controller.socket_window import SocketWindow
 
 
 class CmdMainWindow(Ui_MainWindow, QMainWindow):
@@ -24,6 +23,7 @@ class CmdMainWindow(Ui_MainWindow, QMainWindow):
         self.setupUi(self)
         self.pip_window = PipWindow()
         self.sql_window = SQLWindow()
+        self.socket_window = SocketWindow()
         self.init_ui()
         self.init_slot()
 
@@ -40,6 +40,7 @@ class CmdMainWindow(Ui_MainWindow, QMainWindow):
         self.stackedWidget.removeWidget(self.page)
         self.stackedWidget.removeWidget(self.page_2)
         self.stackedWidget.addWidget(self.sql_window)
+        self.stackedWidget.addWidget(self.socket_window)
 
     def init_slot(self):
         self.listWidget.currentItemChanged.connect(self.change_frame)

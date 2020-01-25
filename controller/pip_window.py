@@ -4,8 +4,6 @@
 @Site    : 
 @File    : pip_window.py
 @Software: PyCharm
-@License: (@)Copyright 2001-2019,SZ_Colibri
-@Contact:weijiang@colibri.com.cn
 """
 import subprocess
 from threading import Thread

@@ -4,8 +4,6 @@
 @Site    : 
 @File    : db.py
 @Software: PyCharm
-@License: (@)Copyright 2001-2019,SZ_Colibri
-@Contact:weijiang@colibri.com.cn
 """
 import pymysql
 

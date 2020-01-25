@@ -4,8 +4,6 @@
 @Site    : 
 @File    : style.py
 @Software: PyCharm
-@License: (@)Copyright 2001-2019,SZ_Colibri
-@Contact:weijiang@colibri.com.cn
 """
 LEFT_WIDGET_STYLE = "QListWidget{" \
                     "background:#383838;" \
@@ -38,3 +36,25 @@ VERTICAL_SCROLL_BAR_STYLE = "QScrollBar{background-color:#FFF; width:10px;}" \
                             "QScrollBar::handle:hover{background-color:rgb(139, 139, 139);}" \
                             "QScrollBar::sub-line{background:transparent;}" \
                             "QScrollBar::add-line{background:transparent;}"
+
+TOP_WIDGET_STYLE = "QListWidget{" \
+                   "background:#383838;" \
+                   "color:#000000;" \
+                   "font: 14pt Arial;"\
+                   "border:0px solid gray;" \
+                   "padding:0px;}" \
+ \
+                   "QListWidget::item{" \
+                   "width:160px;" \
+                   "height:38px;" \
+                   "border:0px solid gray;" \
+                   "padding-left:24px;}" \
+ \
+                   "QListWidget::item:selected:active{" \
+                   "background:#2B2B2B;color:#FFFFFF;" \
+                   "border-width:-1;" \
+                   "border-bottom: 5px solid #F9C138;}" \
+ \
+                   "QListWidget::item:selected{" \
+                   "background:#2B2B2B;color:#FFFFFF;" \
+                   "border-bottom: 5px solid #F9C138;}"

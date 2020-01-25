@@ -1,0 +1,133 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'socker_client_window.ui'
+#
+# Created by: PyQt5 UI code generator 5.11.3
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(571, 563)
+        Form.setStyleSheet("background-color: rgb(40, 40, 40);\n"
+"font: 14pt \"Arial\";\n"
+"color: rgb(255, 255, 255);")
+        self.gridLayout_2 = QtWidgets.QGridLayout(Form)
+        self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout_2.setObjectName("gridLayout_2")
+        self.verticalLayout_2 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_2.setSpacing(0)
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.groupBox = QtWidgets.QGroupBox(Form)
+        self.groupBox.setObjectName("groupBox")
+        self.gridLayout = QtWidgets.QGridLayout(self.groupBox)
+        self.gridLayout.setObjectName("gridLayout")
+        self.verticalLayout = QtWidgets.QVBoxLayout()
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_3.setObjectName("horizontalLayout_3")
+        self.tcp_checkBox = QtWidgets.QCheckBox(self.groupBox)
+        self.tcp_checkBox.setObjectName("tcp_checkBox")
+        self.buttonGroup = QtWidgets.QButtonGroup(Form)
+        self.buttonGroup.setObjectName("buttonGroup")
+        self.buttonGroup.addButton(self.tcp_checkBox)
+        self.horizontalLayout_3.addWidget(self.tcp_checkBox)
+        self.udp_checkBox = QtWidgets.QCheckBox(self.groupBox)
+        self.udp_checkBox.setObjectName("udp_checkBox")
+        self.buttonGroup.addButton(self.udp_checkBox)
+        self.horizontalLayout_3.addWidget(self.udp_checkBox)
+        spacerItem = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_3.addItem(spacerItem)
+        self.verticalLayout.addLayout(self.horizontalLayout_3)
+        self.horizontalLayout_6 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_6.setObjectName("horizontalLayout_6")
+        self.label_3 = QtWidgets.QLabel(self.groupBox)
+        self.label_3.setObjectName("label_3")
+        self.horizontalLayout_6.addWidget(self.label_3)
+        self.choose_file_path_lineEdit = QtWidgets.QLineEdit(self.groupBox)
+        self.choose_file_path_lineEdit.setMinimumSize(QtCore.QSize(0, 35))
+        self.choose_file_path_lineEdit.setMaximumSize(QtCore.QSize(219, 16777215))
+        self.choose_file_path_lineEdit.setReadOnly(True)
+        self.choose_file_path_lineEdit.setObjectName("choose_file_path_lineEdit")
+        self.horizontalLayout_6.addWidget(self.choose_file_path_lineEdit)
+        spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_6.addItem(spacerItem1)
+        self.verticalLayout.addLayout(self.horizontalLayout_6)
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.label = QtWidgets.QLabel(self.groupBox)
+        self.label.setMinimumSize(QtCore.QSize(81, 0))
+        self.label.setObjectName("label")
+        self.horizontalLayout.addWidget(self.label)
+        self.host_lineEdit = QtWidgets.QLineEdit(self.groupBox)
+        self.host_lineEdit.setMinimumSize(QtCore.QSize(0, 35))
+        self.host_lineEdit.setMaximumSize(QtCore.QSize(219, 16777215))
+        self.host_lineEdit.setObjectName("host_lineEdit")
+        self.horizontalLayout.addWidget(self.host_lineEdit)
+        spacerItem2 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem2)
+        self.verticalLayout.addLayout(self.horizontalLayout)
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.label_2 = QtWidgets.QLabel(self.groupBox)
+        self.label_2.setMinimumSize(QtCore.QSize(81, 0))
+        self.label_2.setObjectName("label_2")
+        self.horizontalLayout_2.addWidget(self.label_2)
+        self.port_lineEdit = QtWidgets.QLineEdit(self.groupBox)
+        self.port_lineEdit.setMinimumSize(QtCore.QSize(0, 35))
+        self.port_lineEdit.setMaximumSize(QtCore.QSize(219, 16777215))
+        self.port_lineEdit.setObjectName("port_lineEdit")
+        self.horizontalLayout_2.addWidget(self.port_lineEdit)
+        spacerItem3 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_2.addItem(spacerItem3)
+        self.verticalLayout.addLayout(self.horizontalLayout_2)
+        self.horizontalLayout_5 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_5.setObjectName("horizontalLayout_5")
+        self.connect_server_pushButton = QtWidgets.QPushButton(self.groupBox)
+        self.connect_server_pushButton.setMinimumSize(QtCore.QSize(0, 40))
+        self.connect_server_pushButton.setObjectName("connect_server_pushButton")
+        self.horizontalLayout_5.addWidget(self.connect_server_pushButton)
+        self.send_file_pushButton = QtWidgets.QPushButton(self.groupBox)
+        self.send_file_pushButton.setMinimumSize(QtCore.QSize(0, 40))
+        self.send_file_pushButton.setObjectName("send_file_pushButton")
+        self.horizontalLayout_5.addWidget(self.send_file_pushButton)
+        spacerItem4 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout_5.addItem(spacerItem4)
+        self.verticalLayout.addLayout(self.horizontalLayout_5)
+        self.gridLayout.addLayout(self.verticalLayout, 0, 0, 1, 1)
+        spacerItem5 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout.addItem(spacerItem5, 0, 1, 1, 1)
+        self.verticalLayout_2.addWidget(self.groupBox)
+        self.textBrowser = QtWidgets.QTextBrowser(Form)
+        self.textBrowser.setStyleSheet("background-color: rgb(40, 40, 40);\n"
+"font: 14pt \"Arial\";\n"
+"color: rgb(255, 255, 255);")
+        self.textBrowser.setObjectName("textBrowser")
+        self.verticalLayout_2.addWidget(self.textBrowser)
+        self.gridLayout_2.addLayout(self.verticalLayout_2, 0, 0, 1, 1)
+
+        self.retranslateUi(Form)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Form"))
+        self.groupBox.setTitle(_translate("Form", "通讯方式"))
+        self.tcp_checkBox.setText(_translate("Form", "TCP"))
+        self.udp_checkBox.setText(_translate("Form", "UDP"))
+        self.label_3.setText(_translate("Form", "选择文件:"))
+        self.label.setText(_translate("Form", "主机:"))
+        self.host_lineEdit.setText(_translate("Form", "127.0.0.1"))
+        self.label_2.setText(_translate("Form", "端口:"))
+        self.port_lineEdit.setText(_translate("Form", "1234"))
+        self.connect_server_pushButton.setText(_translate("Form", "连接服务"))
+        self.send_file_pushButton.setText(_translate("Form", "发送文件"))
+        self.textBrowser.setHtml(_translate("Form", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:\'Arial\'; font-size:14pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p></body></html>"))
+
