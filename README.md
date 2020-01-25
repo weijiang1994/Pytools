@@ -18,4 +18,4 @@
 
 #### 20200125更新
 `添加了局域网socket文件传输工具,目前只实现了TCP协议传输,后续加入UDP,以及大文件传输稳定性提升等.`
-![tcp tool] (https://github.com/weijiang1994/Pytools/blob/master/image/tcp-tool.png 'tcp tool')
+![tcp tool](https://github.com/weijiang1994/Pytools/blob/master/image/tcp-tool.png 'tcp tool')
